@@ -1,99 +1,57 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# Work Day Calendar Planner (UCSD Challenge 5)
 
-## Your Task
+## Description
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-You'll need to use the [Day.js](https://day.js.org/en/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
+- A simple calendar application with DayJS used for timekeeping.
+- You're able to check the current hour, along with the day, and make notes for past, present, and future.
+- Using localStorage, you can save your messages for later use/ reference. 
 
-## User Story
+## Installation
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+No installation is necessary. Access via [Gitpages](epicasino.github.io/Calendar-App/).
 
-## Acceptance Criteria
+## Usage
 
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+Provide instructions and examples for use. Include screenshots as needed.
 
-The following animation demonstrates the application functionality:
+To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-<!-- @TODO: create ticket to review/update image) -->
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+**Upon first visiting the site, you will be presented with the current time and date, along with time-blocks for a normal 9AM - 5PM work schedule.**
+![Calendar Website Initilization Page](./assets/images/calendar-initial.png)
 
-## Grading Requirements
+**As you use the website, the current time is updated in real time. You may take notes on any code block, whether it would be in your current hour or not.**
+*The current hour will be shaded in red. Future times will be shaded in green, and past hours will be shaded in grey.*
+![Calendar Note Taking](./assets/images/calendar-notes.png)
+![Calendar Time-Block Colors](./assets/images/calendar-past-present-future.png)
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+**After making notes, you may click the save icon to the right of the desired time-block you would like to save. NOTE: Using the save button will only affect the same time-block you clicked the button in. In order to save multiple times-blocks, you will need to press each save button per text-box.**
+![Calendar Save Function](./assets/images/calendar-save-button.png)
 
-This Challenge is graded based on the following criteria:
+**After refreshing with some saved text, you will still have access to these saved notes for future use.**
+![Calendar Website after Refreshing from a save](./assets/images/calendar-refresh.png)
 
-### Technical Acceptance Criteria: 40%
+## License
 
-* Satisfies all of the above acceptance criteria plus the following:
+MIT License
 
-  * Uses a date utility library to work with date and time
+Copyright (c) 2023 Ray Badua
 
-### Deployment: 32%
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-* Application deployed at live URL
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the Challenge instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
